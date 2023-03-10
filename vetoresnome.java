@@ -6,16 +6,15 @@ public class vetoresnome {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite o nome completo: ");
-        String nm = sc.next();
-        String so = sc.nextLine();
-        System.out.println("Quantas letras tem o seu primeiro nome? ");
-        int le = sc.nextInt();
+        String nome = sc.next();
+        String sobrenome = sc.nextLine();
+        int tamanhoNome = nome.length();
 
-        for (int x = 0; x <= le -1; x++) {
-            System.out.println(nm.charAt(x));
+        for (int x = 0; x <= tamanhoNome -1; x++) {
+            System.out.println(nome.charAt(x));
         }
         for (int x = 0; x <= 0; x++){
-            System.out.println(so);
+            System.out.println(sobrenome);
         }
     }
 }
